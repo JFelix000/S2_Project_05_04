@@ -17,6 +17,7 @@
 /* Main Styles */
 html {
     width: 100%;
+    background-color: #F9C784;
 }
 body {
     margin-left: auto;
@@ -24,27 +25,61 @@ body {
     max-width: 960px;
     min-width: 640px;
     width: 95%;
+    background-color: blanchedalmond;
 }
 
 header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 100%;
+}
+/* Aside Navs */
+
+
+/* Navigation styles */
+
+ul.first, ul.mid, ul.last, ul.aside{
+    display: inline;
+    width: 12.5%;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-ul.drop {
-    display: block;
-    width: 14.285%;
-    float: left;
-    
+ul.list {
+    padding-left: 30px;
+    list-style-type: decimal;
+}
+
+header nav {
+
 }
 /* Class/ID styles */
-.drop {
-    
+
+
+/* Looks specific styles */
+h1 {
+    padding: 10px 10px;
+    clear: left;
 }
-div#info1 {
-    display: block;
-    top: 20px;
-    left: 5%;
+
+p {
+    padding-left: 5px;
+}
+/* Footer styles */
+footer {
+    display: table;
+    width: 100%;
+    padding: 5px 0px;
+    margin: auto;
+    background-color: #5B3000;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
