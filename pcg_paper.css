@@ -15,10 +15,12 @@
 */
 
 /* Main Styles */
+/* This style is just so that the whole page can be given a dimension and this is the base of the rest of my percentages. */
 html {
     width: 100%;
     background-color: #F9C784;
 }
+
 body {
     margin-left: auto;
     margin-right: auto;
@@ -28,6 +30,13 @@ body {
     background-color: blanchedalmond;
 }
 
+/* Image styles */
+/* In case there were any other images in here, I would want to say figure image, because I want to modify the image that I placed in the figure tag. */
+figure img {
+    display: block;
+    float: right;
+}
+
 header img {
     display: block;
     margin-left: auto;
@@ -35,13 +44,12 @@ header img {
     width: 100%;
 }
 
-/* Image styles */
-figure img {
-    display: block;
-    float: right;
+article {
+    float: left;
 }
-/* Navigation styles */
 
+/* Navigation Styles */
+/* These ul's are all having the underlines removed so that I can get rid of those ugly things. This is a preference and it makes sure that I don't have them. */
 ul.mid, ul.last, ul.aside{
     text-decoration: none;
 }
@@ -51,6 +59,7 @@ ul.list {
     list-style-type: decimal;
 }
 
+/* My first list class is the one the is the horizontal nav right under the image in the header. I wanted a padding so it could be easier to see and it didn't look so skinny. The text align center makes it so that the text inside those boxes are centered and look fairly decent. */
 ul.first li {
     float: left;
     width: 12.5%;
@@ -65,54 +74,69 @@ ul.first a {
     color: black;
 }
 
-ul.first li a:hover:not(.active) {
-    /* color: white; */
-}
+/* This is just so that I can make the nav have a less boring affect when the cursor moves to click one of the navs. */
 ul.first li:hover {
     opacity: .8;
 }
-ul.aside{
-    margin-top: 20px;
+
+ul.aside {
+    margin-top: 65px;
 }
-ul.aside li{
+
+/* This was one of the most annoying navs to make for me becuase I didn't know how to format it alongside the text in the first aside. I ended up having to put navs in there and get Christian's help for that. */
+ul.aside li {
     background-color: tan;
     font-size: .9em;
     line-height: 1.6em;
-
 }
 
-article {
+ul.aside a:hover {
+    color: blanchedalmond;
+}
+
+ul.first a:hover {
+    color: blanchedalmond;
+}
+
+/* These are so that you can change the Ul's in the footer so that I can make changes to the way that they can appear. */
+ul.mid {
+    display: inline;
     float: left;
 }
 
+ul.last {
+    display: inline;
+    float: right;
+    margin-top: 50px;
+}
 
-div.row{
+/* Div styles */
+div.row {
     width: 100%
 }
 
-div[class^="col-"]{
+/* This class in brackets looks confusing and all, but it is only there to tell the code that the identifiers with those classes get the rules in the squiggly lines. */
+div[class^="col-"] {
     float:left;
 }
 
-div.col-1-5{
+/* Remember that these 1-5 don't mean anything, the actual widths are determined by the rules set in the squigglies. */
+div.col-1-5 {
     width:20%;
 }
 
-div.col-4-5{
+div.col-4-5 {
     width:80%;
 }
 
 div li {
-    
     list-style-type: none;
 }
 
-div a{
+div a {
     color: black;
     text-decoration: none;
 }
-/* Class/ID styles */
-
 
 /* Looks specific styles */
 h1 {
@@ -138,16 +162,7 @@ footer a {
     color: white;
     text-decoration: none;
 }
+
 footer ul {
     list-style-type: none;
-}
-
-ul.mid {
-    display: inline;
-    float: left;
-}
-ul.last {
-    display: inline;
-    float: right;
-    margin-top: 50px;
 }
