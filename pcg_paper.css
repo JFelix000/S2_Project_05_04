@@ -34,17 +34,15 @@ header img {
     margin-right: auto;
     width: 100%;
 }
-/* Aside Navs */
 
-
+/* Image styles */
+figure img {
+    display: block;
+    float: right;
+}
 /* Navigation styles */
 
-ul.first, ul.mid, ul.last, ul.aside{
-    display: inline;
-    width: 12.5%;
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
+ul.mid, ul.last, ul.aside{
     text-decoration: none;
 }
 
@@ -53,8 +51,65 @@ ul.list {
     list-style-type: decimal;
 }
 
-header nav {
+ul.first li {
+    float: left;
+    width: 12.5%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #D2B48C;
+    overflow: hidden;
+}
 
+ul.first a {
+    color: black;
+}
+
+ul.first li a:hover:not(.active) {
+    /* color: white; */
+}
+ul.first li:hover {
+    opacity: .8;
+}
+ul.aside{
+    margin-top: 20px;
+}
+ul.aside li{
+    background-color: tan;
+    font-size: .9em;
+    line-height: 1.6em;
+
+}
+
+article {
+    float: left;
+}
+
+
+div.row{
+    width: 100%
+}
+
+div[class^="col-"]{
+    float:left;
+}
+
+div.col-1-5{
+    width:20%;
+}
+
+div.col-4-5{
+    width:80%;
+}
+
+div li {
+    
+    list-style-type: none;
+}
+
+div a{
+    color: black;
+    text-decoration: none;
 }
 /* Class/ID styles */
 
@@ -82,4 +137,17 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
+}
+footer ul {
+    list-style-type: none;
+}
+
+ul.mid {
+    display: inline;
+    float: left;
+}
+ul.last {
+    display: inline;
+    float: right;
+    margin-top: 50px;
 }
